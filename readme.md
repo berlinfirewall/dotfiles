@@ -1,4 +1,4 @@
-#Dotfiles
+# Dotfiles
 
 These are my dotfiles which are currently being used on my Thinkpad p52s running Arch Linux. Programs used here are
 the following
@@ -12,7 +12,7 @@ the following
 | System Monitor         | conky   |
 
 
-##Credits
+## Credits
 The files here are modified versions of the following
 
 | Config Part | Source
