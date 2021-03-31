@@ -1,19 +1,21 @@
 # Dotfiles
 
+
+
 These are my dotfiles which are currently being used on my Thinkpad p52s running Arch Linux. Programs used here are
 the following
-| General Application    | Program   |
-|------------------------|-----------|
-| Window Manager         | bspwm     |
-| Taskbar                | polybar   |
-| Terminal               | urxvt     |
-| Wallpaper              | feh       |
-| Keybinds               | sxhkd     |
-| System Monitor         | conky     |
-| Launch Menu            | rofi      |
-| Volume Applet          | volctl    |
-| Network Applet         | nm-applet |
-| Compositor             | picom     |
+| General Application    | Program                                                            |
+|------------------------|--------------------------------------------------------------------|
+| Window Manager         | [bspwm](https://github.com/baskerville/bspwm)                      |
+| Taskbar                | [polybar](https://github.com/polybar/polybar)                      |
+| Terminal               | [rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html)   |
+| Wallpaper              | [feh](https://github.com/derf/feh)                                 |
+| Keybinds               | [sxhkd](https://github.com/baskerville/sxhkd)                      |
+| System Monitor         | [conky](https://github.com/brndnmtthws/conky)                      |
+| Launch Menu            | [rofi](https://github.com/davatorium/rofi)                         |
+| Volume Applet          | [volctl](https://github.com/buzz/volctl)                           |
+| Network Applet         | [nm-applet](https://gitlab.gnome.org/GNOME/network-manager-applet) |
+| Compositor             | [picom](https://github.com/yshui/picom)                            |
 
 ## BSPWM/SXHKD keybinds
 
@@ -41,7 +43,7 @@ I was switching from i3 to bspwm. In order to make the transition easier, I made
 
 
 ## Credits
-The files here are modified versions of the following
+The files here are modified versions of, or inspired by the following
 
 | Config Part | Source
 |-------------|---------|

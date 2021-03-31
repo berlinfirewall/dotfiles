@@ -117,10 +117,10 @@ Filesystem ${alignr}${fs_used_perc /}%  ${fs_bar 4,60 /}
 
 TEMP ${hr 1}
 
-CPU ${alignr}${execi 300 sensors | grep Package\ id\ 0 | cut -c17-20;} ° C
-WIFI ${alignr}${execi 300 sensors iwlwifi_1-virtual-0 | grep temp1: | cut -c16-20;} ° C
-SSD ${alignr}${execi 300 sensors nvme-pci-4000 | grep Composite | cut -c 16-20;} ° C
-CHIPSET ${alignr}${execi 300 sensors pch_skylake-virtual-0 | grep temp1: | cut -c 16-20;} ° C
+CPU ${alignr}${execi 300 sensors | grep Package\ id\ 0 | cut -c17-20;}
+WIFI ${alignr}${execi 300 sensors iwlwifi_1-virtual-0 | grep temp1: | cut -c16-20;}
+SSD ${alignr}${execi 300 sensors nvme-pci-4000 | grep Composite | cut -c 16-20;}
+CHIPSET ${alignr}${execi 300 sensors pch_skylake-virtual-0 | grep temp1: | cut -c 16-20;}
 
 NET ${hr 1}
 ${if_existing /proc/net/route wlp4s0}

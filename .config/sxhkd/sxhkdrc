@@ -1,4 +1,4 @@
-# ---LAUNCH---
+1# ---LAUNCH---
 
 #Open terminal
 super + Return
@@ -7,6 +7,14 @@ super + Return
 # Program Launcher
 super + d
         rofi -show run
+
+# Screenshot
+
+Print
+        sleep 0.2; sh ~/.scripts/bspwm-scrot.sh -s
+
+super + Print
+	sleep 0.2; sh ~/.scripts/bspwm-scrot
 
 # ---SXHKD---
 
