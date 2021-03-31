@@ -1,6 +1,6 @@
 # Dotfiles
 
-
+![](Images/screenshot.png)
 
 These are my dotfiles which are currently being used on my Thinkpad p52s running Arch Linux. Programs used here are
 the following
