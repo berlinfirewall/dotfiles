@@ -1,0 +1,6 @@
+urxvt*depth: 32
+urxvt*termname: xterm-256color
+urxvt*background: rgba:0000/0000/0200/7777
+urxvt*foreground: #FFFFFF
+urxvt.font: xft:terminus:size=8
+urxvt.letterSpace: -3

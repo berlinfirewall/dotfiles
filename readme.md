@@ -2,15 +2,18 @@
 
 These are my dotfiles which are currently being used on my Thinkpad p52s running Arch Linux. Programs used here are
 the following
-| General Application    | Program |
-|------------------------|---------|
-| Window Manager         | bspwm   |
-| Taskbar                | polybar |
-| Terminal               | urxvt   |
-| Wallpaper              | feh     |
-| Keybinds               | sxhkd   |
-| System Monitor         | conky   |
-| Launch Menu            | rofi    |
+| General Application    | Program   |
+|------------------------|-----------|
+| Window Manager         | bspwm     |
+| Taskbar                | polybar   |
+| Terminal               | urxvt     |
+| Wallpaper              | feh       |
+| Keybinds               | sxhkd     |
+| System Monitor         | conky     |
+| Launch Menu            | rofi      |
+| Volume Applet          | volctl    |
+| Network Applet         | nm-applet |
+| Compositor             | picom     |
 
 ## BSPWM/SXHKD keybinds
 

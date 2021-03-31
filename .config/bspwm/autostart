@@ -1,6 +1,6 @@
 feh --bg-scale ~/Images/wp/1574817502526.jpg &
 picom -b -f &
-sh ~/,scripts/launchpolybar.sh &
+sh ~/.scripts/launchpolybar.sh &
 volctl &
 conky &
 setxkbmap us &
