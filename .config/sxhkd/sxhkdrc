@@ -1,0 +1,96 @@
+# ---LAUNCH---
+
+#Open terminal
+super + Return
+        urxvt
+
+# Program Launcher
+super + d
+        rofi -show run
+
+# ---SXHKD---
+
+# Reload sxhkd
+super + Escape
+	pkill -USR1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config'
+
+# ---BSPWM---
+
+# Reload bspwm
+super + shift + r
+	bspc wm -r; notify-send 'BSPWM' 'Restarted BSPWM'
+
+# Kill node
+super + shift + q
+	bspc node -c || bspc node -k
+
+# ---SCREEN LAYOUTS---
+
+# Toggle Monocle/Tiled
+super + m
+	bspc desktop -l next
+
+# Toggle Floating
+super + shift + space
+    bspc node -t tiled || bspc node -t floating
+
+# set the window state
+super + {t,shift + t,s,f}
+        bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# ---FOCUS/SWAP---
+
+# Focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+        bspc {desktop -f,node -d} '^{1-9,10}'
+
+# Swap window positions
+super + shift + {Left,Down,Up,Right}
+    bspc node -s {west,south,north,east}
+
+# Change windows
+super + {Left,Down,Up,Right}
+    bspc config pointer_follows_focus true; \
+    cur_win=$(bspc query -W -w) \
+    cur_mon=$(bspc query -M -m); \
+    dir={west,south,north,east}; \
+    if ! bspc node -f $dir; then bspc node -m $dir; \
+        bspc monitor -f $dir; \
+    else \
+        new_mon=$(bspc query -M -m); \ 
+        if [ $new_mon -eq $cur_mon ]; then \
+            bspc node -s $cur_win; \
+        else \
+            bspc node $cur_win -m ^$new_mon; \
+        fi; \
+    bspc node -f $cur_win; \
+    fi; \
+    bspc config pointer_follows_focus false 
+
+
+
+# ---MOVE/RESIZE---
+
+# Window resize
+super + alt + {h,j,k,l}
+  ~/.config/sxhkd/scripts/resize.sh {left,down,up,right} 30
+
+super + alt + {Left,Down,Up,Right}
+  ~/.config/sxhkd/scripts/resize.sh {left,down,up,right} 30
+
+
+# --- VOLUME ---
+
+XF86AudioRaiseVolume
+        pactl set-sink-volume @DEFAULT_SINK@ +1%
+
+XF86AudioLowerVolume
+        pactl set-sink-volume @DEFAULT_SINK@ -1%
+
+XF86AudioMute
+        pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# --- KEYBOARD LAYOUT---
+
+super + space
+	{setxkbmap us, setxkbmap ru -variant phonetic}

@@ -1,0 +1,8 @@
+feh --bg-scale ~/Images/wp/1574817502526.jpg &
+picom -b -f &
+sh ~/,scripts/launchpolybar.sh &
+volctl &
+conky &
+setxkbmap us &
+nm-applet &
+setxkbmap -option grp:win_space us,ru
