@@ -50,4 +50,4 @@ The files here are modified versions of, or inspired by the following
 | .conkyrc    | [Slightly modified version of rent0n86's "lateral conkyrc"](https://www.deviantart.com/rent0n86/art/My-lateral-conkyrc-111585732) |
 | .sxkhdrc    | Inspired by [i3-like multihead in bspwm](https://notes.neeasade.net/BSPWM-Multihead.html) and [Phenax's resize.sh](https://github.com/phenax/dotfiles/tree/master/.config/bspwm/scripts)|
 | polybar     | Modified from [Nixlad's old dotfiles](https://github.com/nixlad/dotfiles-old/blob/master/polybar/config)|
-
+| bspwm-scrot | Taken from [maxastyler's dotfiles](https://github.com/maxastyler/dotfiles/blob/master/scrot/.config/bspwm/bspwm-scrot) |

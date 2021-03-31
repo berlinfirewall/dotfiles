@@ -7,7 +7,7 @@ _conf_dir="${HOME}/.config/bspwm"
 _conf="${_conf_dir}/bspwm-scrot.conf"
 
 if ! [ -f $_conf ]; then
-	echo "scrot_dir=${HOME}/.scrots" > $_conf
+	echo "scrot_dir=${HOME}/Images/Screenshots" > $_conf
 
 fi
 
