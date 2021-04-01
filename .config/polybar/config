@@ -57,8 +57,7 @@ modules-right = cpu memory
 
 tray-position = right
 tray-padding = 6
-tray-background = #000000
-;tray-transparent = true
+tray-transparent = true
 
 wm-restack = bspwm
 
