@@ -53,15 +53,14 @@ font-2 = FontAwesome:pixelsize=11;1
 
 modules-left = date time temperature volume battery0 battery1
 modules-center = xwindow
-modules-right = cpu memory i3
+modules-right = cpu memory
 
 tray-position = right
 tray-padding = 6
 tray-background = #000000
 ;tray-transparent = true
 
-;wm-restack = bspwm
-wm-restack = i3
+wm-restack = bspwm
 
 ;override-redirect = true
 
